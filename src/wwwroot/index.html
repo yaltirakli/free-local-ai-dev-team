@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Free Local AI Dev Team</title>
+  <style>
+    :root{font-family:Inter,Segoe UI,system-ui,sans-serif;color:#e8edf5;background:#0b1020;font-synthesis:none;--line:#26324a;--muted:#aab6ca;--mint:#77e5c2;--blue:#8bb8ff;--panel:#121a2b}*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 78% -12%,#1f3b57 0,transparent 43%),#0b1020;min-height:100vh}.shell{max-width:1440px;margin:auto;padding:28px 30px 70px}.top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:24px}.brand{display:flex;align-items:center;gap:13px}.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#70e1c1,#83a9ff);display:grid;place-items:center;color:#091321;font-size:22px;font-weight:900}.eyebrow{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--mint);font-weight:700}.top h1{font-size:20px;margin:3px 0 0;letter-spacing:-.02em}.local-pill{border:1px solid #386052;color:#9be9c8;background:#10251f;padding:8px 12px;border-radius:99px;font-size:12px;white-space:nowrap}.hero{display:grid;grid-template-columns:1.4fr .8fr;gap:18px;margin-bottom:18px}.card{background:linear-gradient(145deg,rgba(21,31,50,.97),rgba(15,23,39,.97));border:1px solid var(--line);border-radius:17px;padding:21px;box-shadow:0 18px 52px rgba(0,0,0,.15)}h2{font-size:15px;margin:0 0 7px}p{color:var(--muted);line-height:1.55;margin:5px 0}.brief-label{display:flex;justify-content:space-between;align-items:center;margin:18px 0 8px;font-size:12px;color:#dce5f2}.brief-label button{background:transparent;border:0;color:var(--blue);font:inherit;cursor:pointer}textarea{resize:vertical;width:100%;min-height:132px;background:#0b1323;border:1px solid #31405b;border-radius:11px;padding:13px 14px;color:#edf3fc;font:13px/1.55 inherit;outline:none}textarea:focus,select:focus{border-color:#79dbc0;box-shadow:0 0 0 3px #57d8b51b}.actions{display:flex;gap:10px;align-items:center;margin-top:13px}.button{border:0;border-radius:10px;padding:10px 16px;font-weight:700;cursor:pointer}.primary{color:#081722;background:linear-gradient(135deg,#82e7c8,#9cc8ff)}.secondary{background:#27364f;color:#dfe8f4}.danger{background:#4a2630;color:#ffc4ce}.button:disabled{opacity:.48;cursor:not-allowed}.help{font-size:11px!important;margin-top:12px!important}.stat{display:flex;align-items:center;gap:12px;padding:13px 0;border-bottom:1px solid #24304a}.stat:last-of-type{border-bottom:0}.stat-icon{width:34px;height:34px;border-radius:10px;background:#1d2a40;color:var(--mint);display:grid;place-items:center}.stat strong{display:block;font-size:13px}.stat small{display:block;color:var(--muted);font-size:11px;margin-top:3px}.privacy{margin-top:14px;padding:11px 12px;border:1px solid #315744;background:#11231e;border-radius:10px;color:#bde9d2;font-size:11px;line-height:1.5}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:25px 2px 12px}.section-head h2{font-size:17px}.section-head p{font-size:12px}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.agent{background:#111a2a;border:1px solid #26334b;border-radius:12px;padding:13px}.agent-top{display:flex;justify-content:space-between;gap:8px;align-items:start}.agent-name{font-weight:700;font-size:12px}.agent-role{font-size:10px;color:var(--muted);margin-top:4px}.badge{font-size:9px;border-radius:99px;padding:4px 7px;background:#253248;color:#9eadc3;white-space:nowrap}.badge.running{background:#4b3b1c;color:#ffda7e}.badge.done{background:#153c32;color:#8de6be}.badge.failed{background:#48242d;color:#ffadb9}.agent select{margin-top:12px;width:100%;background:#0a1220;color:#e5edf9;border:1px solid #31405b;border-radius:8px;padding:8px;font-size:11px}.placeholder{padding:14px 4px;color:#8091aa;font-size:12px}.timeline{display:flex;flex-direction:column;gap:10px}.event{border:1px solid #293650;background:#101929;border-radius:12px;overflow:hidden}.event-head{display:flex;align-items:center;gap:10px;padding:11px 14px;background:#131e30}.event-dot{width:8px;height:8px;border-radius:50%;background:var(--blue);flex:none}.event.complete .event-dot{background:var(--mint)}.event.failed .event-dot{background:#ff8b9d}.event-title{font-size:12px;font-weight:700}.event-meta{margin-left:auto;color:#8fa1ba;font-size:10px;text-align:right}.event-body{padding:12px 14px;max-height:380px;overflow:auto}.event-body details{border-top:1px solid #26334b;padding:9px 0}.event-body details:first-child{border:0;padding-top:0}.event-body summary{font-size:11px;color:#adc1dc;cursor:pointer}.event-body pre{font:11px/1.6 Consolas,monospace;white-space:pre-wrap;overflow-wrap:anywhere;color:#dce6f4;margin:9px 0 0}.error-box{padding:12px;border:1px solid #754451;border-radius:9px;color:#ffb2bf;background:#321a22;font-size:12px;margin-top:12px}.footer{margin-top:22px;color:#8191a7;font-size:10px;display:flex;justify-content:space-between;gap:10px}.mono{font-family:Consolas,monospace;color:#bdcce0;overflow-wrap:anywhere}@media(max-width:920px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:560px){.shell{padding:18px 13px 50px}.grid{grid-template-columns:1fr}.top{align-items:start}.local-pill{font-size:10px}.card{padding:16px}.event-meta{font-size:9px}}
+  </style>
+</head>
+<body>
+<main class="shell">
+  <header class="top">
+    <div class="brand"><div class="logo">A</div><div><div class="eyebrow">Yerel ajan çalışma alanı</div><h1>Free Local AI Dev Team</h1></div></div>
+    <div class="local-pill">● Yalnızca bu bilgisayarda</div>
+  </header>
+
+  <section class="hero">
+    <div class="card">
+      <h2>Yeni proje çalışması</h2>
+      <p>Brief'i belirle, her role yerel bir model ata ve ekibin adım adım çalışmasını izle.</p>
+      <div class="brief-label"><label for="brief">Proje brief'i</label><button id="sample">RepoRadar örneğini yükle</button></div>
+      <textarea id="brief" maxlength="6000" placeholder="Kullanıcı, problemi, hedefi ve sınırları anlat. Özel anahtar veya parola yazma."></textarea>
+      <div class="actions"><button class="button primary" id="start">Ajan ekibini çalıştır</button><button class="button danger" id="stop" disabled>Durdur</button></div>
+      <p class="help">Bu sürüm plan ve Markdown raporları üretir. Kaynak kodu değiştirmez, GitHub'a bağlanmaz ve push yapmaz.</p>
+      <div id="error"></div>
+    </div>
+    <aside class="card">
+      <h2>Çalışma durumu</h2>
+      <p>Model, durum ve konuşma akışı canlı olarak burada görünür.</p>
+      <div class="stat"><div class="stat-icon">◷</div><div><strong id="run-status">Hazır</strong><small id="active-agent">Çalışma başlatılmadı</small></div></div>
+      <div class="stat"><div class="stat-icon">◈</div><div><strong id="progress">0 / 8 ajan</strong><small>Ardışık ekip akışı</small></div></div>
+      <div class="stat"><div class="stat-icon">▣</div><div><strong>Yerel Ollama</strong><small id="ollama-status">Modeller aranıyor…</small></div></div>
+      <div class="privacy">Gizlilik: İstekler varsayılan olarak <span class="mono">127.0.0.1</span> üzerindeki Ollama'ya gider. Brief ve ajan konuşmaları yerel <span class="mono">work/&lt;run-id&gt;</span> klasörüne yazılır. Sunucu ağdaki diğer cihazlara açılmaz.</div>
+    </aside>
+  </section>
+
+  <div class="section-head"><div><h2>Ajan ekibi ve model atamaları</h2><p>Her rol için farklı bir yüklü model seçebilirsin. İstersen aynı modeli birden çok rolde kullan.</p></div></div>
+  <section id="agents" class="grid"><div class="placeholder">Ajanlar yükleniyor…</div></section>
+
+  <div class="section-head"><div><h2>Ajanlar arası konuşma ve üretim akışı</h2><p>Bir sonraki ajan, rolüne göre önceki ajanların notlarını bağlam olarak alır.</p></div><div id="output-path" class="mono"></div></div>
+  <section id="timeline" class="timeline"><div class="placeholder">Çalıştırma başlayınca prompt ve yanıtlar burada görünür.</div></section>
+  <footer class="footer"><span>Ücretsiz yerel modeller · API anahtarı yok · Otomatik GitHub işlemi yok</span><span>Sunucuyu kapatmak için açılan PowerShell penceresinde Ctrl+C</span></footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let agentList = [], modelList = [], sequence = 0, rendered = new Set(), activeRunId = null;
+const labels = {idle:'Hazır',running:'Çalışıyor',completed:'Tamamlandı',failed:'Hata',stopped:'Durduruldu'};
+const esc = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+
+async function loadSetup(){
+  try {
+    const [agentsResponse,modelsResponse] = await Promise.all([fetch('/api/agents'),fetch('/api/models')]);
+    agentList = await agentsResponse.json();
+    if(!modelsResponse.ok) throw new Error((await modelsResponse.json()).detail || 'Ollama model listesi alınamadı.');
+    modelList = await modelsResponse.json();
+    $('ollama-status').textContent = modelList.length ? `${modelList.length} yerel model yüklü` : 'Model bulunamadı. ollama pull <model> çalıştır.';
+    renderAgents();
+  } catch(error) {
+    $('ollama-status').textContent = 'Ollama bağlantısı yok';
+    $('error').innerHTML = `<div class="error-box">${esc(error.message)}<br>Ollama'yı başlat, sonra modelleri <span class="mono">ollama list</span> ile kontrol et.</div>`;
+    renderAgents();
+  }
+}
+
+function renderAgents(){
+  const root = $('agents');
+  if(!agentList.length){root.innerHTML='<div class="placeholder">Ajan listesi yüklenemedi.</div>';return;}
+  root.innerHTML = agentList.map(agent => `<article class="agent" data-agent="${esc(agent.id)}"><div class="agent-top"><div><div class="agent-name">${esc(agent.name)}</div><div class="agent-role">${esc(agent.id)}</div></div><span class="badge" id="badge-${esc(agent.id)}">Bekliyor</span></div><select aria-label="${esc(agent.name)} modeli" id="model-${esc(agent.id)}" ${modelList.length?'':'disabled'}>${modelList.map((model,index)=>`<option value="${esc(model)}">${esc(model)}${index===0?' · varsayılan':''}</option>`).join('')}</select></article>`).join('');
+}
+
+$('sample').addEventListener('click',()=>{$('brief').value='RepoRadar: .NET 10 ile geliştirilen, solo yazılımcıların GitHub portföylerini iyileştirmesine yardım eden yerel öncelikli bir uygulama. Depo URL veya JSON girdisini alır; README, lisans, açıklama, son aktivite ve topic alanlarını inceler, şeffaf bir sağlık puanı ve öneriler üretir. Veriler SQLite üzerinde yerel kalır. GitHub Public API isteğe bağlı, salt okunur ve tokensızdır. Otomatik commit/push yok. MVP: depo kataloğu, kontrol listesi, portföy puanı ve Markdown raporu. Çıktıları Türkçe hazırla.';});
+
+$('start').addEventListener('click',async()=>{
+  $('error').innerHTML='';
+  const brief=$('brief').value.trim();
+  const models=Object.fromEntries(agentList.map(agent=>[agent.id,$(`model-${agent.id}`)?.value || '']));
+  try{
+    const response=await fetch('/api/run',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({brief,models})});
+    const body=await response.json();
+    if(!response.ok) throw new Error(body.error || body.detail || 'Çalıştırma başlatılamadı.');
+    activeRunId=body.runId;sequence=0;rendered.clear();$('timeline').innerHTML='';
+    agentList.forEach(agent=>{const badge=$(`badge-${agent.id}`);if(badge){badge.className='badge';badge.textContent='Bekliyor';}});
+    await poll();
+  }catch(error){$('error').innerHTML=`<div class="error-box">${esc(error.message)}</div>`;}
+});
+
+$('stop').addEventListener('click',async()=>{
+  try{const response=await fetch('/api/stop',{method:'POST'});if(!response.ok)throw new Error('Durdurma isteği gönderilemedi.');}
+  catch(error){$('error').innerHTML=`<div class="error-box">${esc(error.message)}</div>`;}
+});
+
+function addEvent(item){
+  if(rendered.has(item.sequence))return;rendered.add(item.sequence);sequence=Math.max(sequence,item.sequence);
+  if($('timeline').querySelector('.placeholder'))$('timeline').innerHTML='';
+  const isStart=item.kind==='started', isDone=item.kind==='completed', isError=item.kind==='failed';
+  const card=document.createElement('article');card.className=`event ${isDone?'complete':''} ${isError?'failed':''}`;
+  let details='';
+  if(item.prompt)details+=`<details><summary>Bu ajana gönderilen görev ve bağlam</summary><pre>${esc(item.prompt)}</pre></details>`;
+  if(item.content)details+=`<details open><summary>Ajan yanıtı · ${esc(item.model)}</summary><pre>${esc(item.content)}</pre></details>`;
+  if(item.error)details+=`<details open><summary>Bilgi</summary><pre>${esc(item.error)}</pre></details>`;
+  card.innerHTML=`<div class="event-head"><span class="event-dot"></span><span class="event-title">${esc(item.agentName)} · ${isStart?'çalışıyor':isDone?'tamamlandı':isError?'hata':esc(item.kind)}</span><span class="event-meta">${esc(item.model || '')} · ${new Date(item.at).toLocaleTimeString('tr-TR')}</span></div><div class="event-body">${details || '<span class="placeholder">Kayıt ayrıntısı yok.</span>'}</div>`;
+  $('timeline').append(card);
+  if(isStart)$(`badge-${item.agentId}`)?.classList.add('running');
+  if(isDone){const b=$(`badge-${item.agentId}`);if(b){b.className='badge done';b.textContent='Tamamlandı';}}
+  if(isError){const b=$(`badge-${item.agentId}`);if(b){b.className='badge failed';b.textContent='Hata';}}
+}
+
+async function poll(){
+  try{
+    const [stateResponse,eventsResponse]=await Promise.all([fetch('/api/state'),fetch(`/api/events?after=${sequence}`)]);
+    const state=await stateResponse.json(), events=await eventsResponse.json();
+    if(activeRunId && state.runId!==activeRunId){activeRunId=state.runId;sequence=0;rendered.clear();$('timeline').innerHTML='';}
+    events.forEach(addEvent);
+    $('run-status').textContent=labels[state.status] || state.status;
+    const current=agentList.find(agent=>agent.id===state.activeAgent);
+    $('active-agent').textContent=current?`${current.name} çalışıyor`:state.error || (state.status==='completed'?'Sekiz ajan çıktı üretti.':state.status==='stopped'?'Çalışma durduruldu.':'Çalışma başlatılmadı');
+    const completed=agentList.filter(agent=>$(`badge-${agent.id}`)?.classList.contains('done')).length;
+    $('progress').textContent=`${completed} / ${agentList.length || 8} ajan`;
+    $('start').disabled=state.status==='running' || modelList.length===0;
+    $('stop').disabled=state.status!=='running';
+    document.querySelectorAll('.agent select').forEach(select=>select.disabled=state.status==='running');
+    $('output-path').textContent=state.outputDirectory?`Çıktı: ${state.outputDirectory}`:'';
+    if(state.error && !document.querySelector('.error-box'))$('error').innerHTML=`<div class="error-box">${esc(state.error)}<br>Önceki ajanların kayıtları korunmuştur.</div>`;
+  }catch(error){$('run-status').textContent='Bağlantı kesildi';}
+  setTimeout(poll,1200);
+}
+
+loadSetup().then(poll);
+</script>
+</body>
+</html>
