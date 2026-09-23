@@ -1,6 +1,7 @@
 bin/
 obj/
 work/
+.local-appdata/
 .vs/
 .idea/
 *.user

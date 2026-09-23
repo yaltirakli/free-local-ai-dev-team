@@ -25,7 +25,7 @@ try
 
     Console.WriteLine("Installed local models:");
     for (var i = 0; i < models.Length; i++) Console.WriteLine($"  {i + 1}. {models[i]}");
-    Console.Write("Choose model [1]: ");
+    Console.Write($"Choose model [1]: ");
     var choice = Console.ReadLine();
     var index = int.TryParse(choice, out var selected) ? selected - 1 : 0;
     if (index < 0 || index >= models.Length)
